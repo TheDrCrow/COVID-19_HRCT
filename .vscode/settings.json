@@ -1,0 +1,167 @@
+{
+    //---WORKBENCH------
+    
+        "workbench.colorCustomizations": {
+            "statusBar.background": "#078dc6",
+            "statusBar.noFolderBackground": "#0ad800",
+            "statusBar.debuggingBackground": "#379141",
+            "statusBar.foreground": "#000000"
+        },
+        "workbench.iconTheme": "material-icon-theme",
+        "workbench.colorTheme": "Cobalt2",
+    
+    //---EDITOR-------
+    
+        "editor.multiCursorModifier": "ctrlCmd",
+        "editor.tabSize": 2,
+        "editor.fontFamily": "firacode, hack, Consolas, 'Courier New', monospace",
+        "editor.wordWrap": "bounded", 
+        "editor.wordWrapColumn": 60, 
+        "editor.lineNumbers": "relative",
+        "editor.minimap.enabled": false, 
+        "editor.tabCompletion": "on",
+    
+    //---WINDOW-----
+    
+        "window.zoomLevel": 0,
+    
+    //----HTML and other
+       
+        "html.mirrorCursorOnMatchingTag": false,
+        "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "problems.showCurrentInStatus": true,
+    
+    //----VIM General ---
+    
+        "vim.incsearch": true,
+        "vim.useSystemClipboard": true,
+        "vim.useCtrlKeys": true,
+        "vim.hlsearch": true,
+        "vim.textwidth": 60,
+    
+        "vim.cursorStylePerMode.visual": "block-outline",
+        "vim.cursorStylePerMode.visualblock": "block-outline",
+        "vim.cursorStylePerMode.visualline": "block-outline",
+        "vim.cursorStylePerMode.insert": "line",
+        "vim.cursorStylePerMode.normal": "block",
+        "vim.cursorStylePerMode.replace": "underline",
+    
+        "vim.highlightedyank.duration": 900,
+        "vim.highlightedyank.enable": true,
+    
+        "vim.insertModeKeyBindings": [
+            {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+            },
+            {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+            }
+        ],
+        "vim.normalModeKeyBindingsNonRecursive": [
+            {
+            "before": ["<leader>", "d"],
+            "after": ["d", "d"]
+            },
+            {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+            },
+            {
+            "before": ["s", "s"],
+            "after":["s", "x", "x", "c", "w"]
+            }
+        ],
+        "vim.handleKeys": {
+            "<C-a>": false,
+            "<C-f>": false
+            },
+    
+     //-----------VIM EASYMOTION------------------------------- 
+    
+        "vim.easymotion": true,
+        "vim.easymotionMarkerBackgroundColor": "white",
+        "vim.easymotionMarkerFontWeight": "bold",
+        "vim.easymotionMarkerForegroundColorOneChar": "black",
+        "vim.easymotionMarkerForegroundColorTwoChar": "black",
+    
+     //----------VIM SNEAK -----------------------------------
+     
+        "vim.sneak": true,
+    
+     //----------VIM STATUSBAR ---------------------------------
+       
+        "vim.statusBarColorControl": true, 
+        "vim.statusBarColors.normal": ["#078dc6", "#e8edef"],
+        "vim.statusBarColors.insert": ["blue", "white"],
+        "vim.statusBarColors.visual": ["lightblue", "black"],
+        "vim.statusBarColors.visualline": "#B48EAD",
+        "vim.statusBarColors.visualblock": "#A3BE8C",
+        "vim.statusBarColors.replace": "#D08770",
+        "vim.statusBarColors.commandlineinprogress": "#007ACC",
+        "vim.statusBarColors.searchinprogressmode": "#007ACC",
+        "vim.statusBarColors.easymotionmode": "#007ACC",
+        "vim.statusBarColors.easymotioninputmode": "#007ACC",
+        "vim.statusBarColors.surroundinputmode": "#007ACC",
+    
+     //------------------OTHER COLOURS-----------------------
+           // "workbench.colorCustomizations": {
+           //      "statusBar.background": "#BF616A",
+           //     "statusBar.noFolderBackground": "#BF616A",
+           //     "statusBar.debuggingBackground": "#BF616A"
+           //},
+    
+     //-----"log" File highlighter extension ----
+    
+        "logFileHighlighter.customPatterns": [
+            {
+                "pattern": "MAIN FINDINGS:",
+                "foreground": "green"
+            },
+            {
+                "pattern": "CONCLUSION:",
+                "foreground": "crimson",
+            },
+            {
+                "pattern": "OTHER",
+                "foreground": "blue"
+            },
+            {
+                "pattern": "xxx",
+                "foreground": "red"
+            }
+            ],
+    
+        "files.associations": {
+            "*.txt": "log"
+        },
+        
+        "colorInfo.languages": [
+            {
+                "selector": "css",
+                "colors": "css"
+            },
+            {
+                "selector": "sass",
+                "colors": "css"
+            },
+            {
+                "selector": "scss",
+                "colors": "css"
+            },
+            {
+                "selector": "less",
+                "colors": "css"
+            },
+            {
+                "selector": "txt",
+                "colors": "hex"
+            },
+            {
+                "selector": "json",
+                "colors": "hex"
+            }
+        ],
+}
+    
