@@ -40,7 +40,11 @@ The role is twofold:
    
    Combined with a decent history and other predictive elements ( Lymphopenia and / or Fever ) this has an adequate post-test probability to move straight into isolation without the need for a CT .  
    This leaves a large group of patients with normal CXRs and good histories or patients with reasonable or good histories and some, but not specific CXR findings. For instance infective exacerbation of COPD. These patients will need an HRCT.
-----
+
+![Faint patchy airspace opacities at presentation](images\covid_cxr_faint_airspace.jpg)
+
+_CXR in patient presenting with Covid-19 infection - note the patchy, ill-defined, mostly peripheral regions of increased attenuation._
+
 ### HRCT
 
 Non contrast is better but the changes are not so subtle we will err if we give contrast. Scan the whole chest as a volume as per the protocols. CT chest has been added to all the acute abdomen work to spot the occult / atypical Covid-19. These patients are high risk to staff in the operating theatre and there is a suggestion they are at higher risk as well.
@@ -54,6 +58,9 @@ The **CLASSICAL APPEARANCES** of an HRCT with COVID-19 infection are:
    c. Consolidation - nearly always in combination with the ground-glass opacities, rarely on its own.
 2. err that is about it in terms of 'classical features' . Without ground-glass / mixed opacities it is unlikely to be Covid-19 and of course there are multiple virus and other pathogens and insults that can cause this so it is non-specific. 
 
+_CT at presentation with moderate size airspace opacities._  ![Classical CT at presentation](images\covid_CT_moderate_airspace_opacities.jpg)
+
+
 Then there are **NOT-CLASSICAL APPEARANCES** or sometimes features often seen further into the course of the illness.
 
 1. Reticulation in association with the nodules
@@ -62,7 +69,7 @@ Then there are **NOT-CLASSICAL APPEARANCES** or sometimes features often seen fu
 3. Crazy-paving / Perilobular changes. 
 4. Reverse Halo / Atoll sign - though this is rare.
 
-Then there are the **NOT** signs which are not known to be related to COVID-19 and may push the differential away from the 
+Then there are the **NOT** signs which are infrequently seen may not be related to COVID-19 and may push the differential toward something else.
 
 1. Cavitation 
 2. Pleural effusion
