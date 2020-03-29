@@ -5,22 +5,27 @@
 ***At the time of writing the literature on SARS-Cov-2 infection is dominated by small descriptive studies mostly coming out of Wuhan in China. There are significant differences in age (average in many papers = 40 to 50yrs), background morbidity, medical practice and culture which will alter how this disease will present, be interpreted and will probably alter what the findings on radiology are. So, don't expect our experience over the next few months to be the same.***
 
 <!-- TOC -->
- 
 - [Idiot's Guide to Covid-19 HRCT reporting.](#idiots-guide-to-covid-19-hrct-reporting)
   - [Clinical Features](#clinical-features)
       - [Symptoms and Signs](#symptoms-and-signs)
       - [Timescales](#timescales)
   - [CXR features](#cxr-features)
   - [HRCT](#hrct)
-      - [Classical Features](#classical-features)
-      - [Change over time](#change-over-time)
-      - [Things to get confused over:](#things-to-get-confused-over)
-        - [Dependent changes](#dependent-changes)
+    - [**Classical Features at presentation.**](#classical-features-at-presentation)
+    - [**Change over time.**](#change-over-time)
+    - [Confusing terms.](#confusing-terms)
+      - [Reticulation](#reticulation)
+      - [Vascular Enlargement](#vascular-enlargement)
+      - [Crazy Paving](#crazy-paving)
+      - [Interlobular](#interlobular)
+      - [Organising Pneumonia](#organising-pneumonia)
+      - [Halo and Atolls](#halo-and-atolls)
+      - [Bandlike changes & Dependent changes.](#bandlike-changes--dependent-changes)
   - [Pathway](#pathway)
   - [Reports](#reports)
   - [HRCT appearance of other things](#hrct-appearance-of-other-things)
-    - [Covid-19 other resources](#covid-19-other-resources)
-      - [Colleges / Associations etc](#colleges--associations-etc)
+  - [Covid-19 other resources](#covid-19-other-resources)
+    - [Colleges / Associations etc](#colleges--associations-etc)
   - [References](#references)
 
 ## Clinical Features
@@ -68,7 +73,8 @@
 
 Changes on HRCT are described soon after onset, so we may expect to see abnormalities on most of the referral but only 55% of patients had abnormalities on HRCT from day 0-2 of infection.
 
-----
+____
+
 ## CXR features
 
 These will be the first investigation and there is NO direct to HRCT!
@@ -95,8 +101,8 @@ _CXR in patient presenting with Covid-19 infection - note the patchy, ill-define
 
 Non contrast is better but the changes are not so subtle we will err if we give contrast. Scan the whole chest as a volume as per the protocols. CT chest has been added to all the acute abdomen work to spot the occult / atypical Covid-19. These patients are high risk to staff in the operating theatre and there is a suggestion they are at higher risk as well.
 
-#### Classical Features
-The **CLASSICAL APPEARANCES** of an HRCT with COVID-19 infection are:   
+### **Classical Features at presentation.**
+The **CLASSICAL APPEARANCES** of an HRCT of a patient presenting with COVID-19 infection are:   
 
 1. Ground-glass opacities :  
    * Small and patchy > Large and Solitary  
@@ -110,7 +116,7 @@ The **CLASSICAL APPEARANCES** of an HRCT with COVID-19 infection are:
 _Typical CT at presentation with moderate size airspace opacities, which are bilateral, basal and mostly peripheral._  
 
 
-Then there are **NOT-CLASSICAL APPEARANCES** or sometimes features often seen further into the course of the illness.
+Then there are **NOT-CLASSICAL APPEARANCES** or occasional features often seen further into the course of the illness.
 
 1. Reticulation in association with the nodules
 1. Round opacities > linear opacities
@@ -118,7 +124,7 @@ Then there are **NOT-CLASSICAL APPEARANCES** or sometimes features often seen fu
 3. Crazy-paving / Perilobular changes. 
 4. Reverse Halo / Atoll sign - though this is rare.
 
-Then there are the **NOT** signs which are infrequently seen may not be related to COVID-19 and may push the differential toward something else.
+Then there are the **NOT** signs may not be related to COVID-19 and may push the differential toward something else.
 
 1. Cavitation 
 2. Pleural effusion
@@ -126,9 +132,10 @@ Then there are the **NOT** signs which are infrequently seen may not be related 
 4. Bronchial wall thickening is seen in a minority but mostly late and might be chronic. 
 5. Widespread fibrosis.
 
-Remember that chronic lung disease does not protect patients from infection but predicts them being sicker and thus more likely to be ill. 
-
-The literature on CT findings is heterogeneous, especially in relation to 'subtle' early findings: some papers don't assess it, others say it is 0% whilst others state figures of 50% even at presentation. It must depend on how hard you look and what your definition is, so don't fret over it. 
+>**NB** <br>
+> Background changes ( emphysema, fibrosis etc ) are common and might predict worse prognosis. <br>
+> The literature on the 'occasional' findings is heterogeneous.<br>
+>   e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%. 
 
 ![Subtle change at presentation](images\covid_CT_small_airspace_lesions_small.jpg)
  
@@ -136,14 +143,73 @@ _CT at presentation demonstrating subtle change which progressed on subsequent C
 
 ![Obvious change at presentation](images/covid_CT_#1_AJR.jpg)
 
-_CT at presentation demonstrating more established change but slightly atypical change. Could call this perilobular or reversed halo. Subsequent CTs demonstrated progression._
+_CT at presentation demonstrating more established change but slightly atypical change. Could call this perilobular or reversed halo. Subsequent CTs demonstrated more foci of ground glass opacity._
 
+### **Change over time.**
+ 
+  - Several papers now document changes out to a month. 
+    - hampered by variability in practice, timings and record of findings as well as interpretation.
+    - general description of both fatal and non-fatal severe infection is developing.
 
+**Non-fatal progression and resolution of severe infection**  
 
-#### Change over time
-#### Things to get confused over:
+| Phase | Days | Findings |
+| ------ |-----|-------|
+|Early | 0-4 | None ( esp 0-2 days)<br>Low volume, subpleural, lower lobe GGOs.<br>Unilateral or bilateral|
+|Progressive | 5-8 | Rapid increase in size and number to bilateral multilobed with diffuse GGO.<br>Consolidation and crazy-paving described.
+|Peak | 9-13 | No new lesions.<br>Increase in attenuation in lesions now with dense consolidation<br>Crazy-paving and parenchymal bands more common.|
+|Absorption | 14-28 | Gradual resorption of consolidation.<br>Appears to be more GGO as the consolidation reduces.<br>No crazy paving.|
 
-##### Dependent changes
+90% + of scans carried out at Day 24-28 will be abnormal - mostly still some airspace change. 
+
+![CT demonstrating a moderate pneumonia with resolution, Pan et al Radiol 2020 in press ](images\covid_CT_resolution-series_AJR.jpg)
+
+_CT series of a 47yo female demonstrating the changes and resolution of a covid-19 infection.<br> A= 3 days post onset, B = 7 days post onset, C = 11 days post onset with signs of improvement which is early, D= 20 days_
+
+![CT pattern of resolution over time Wang et al Radiol in press](images\covid_CT_resolution_series2.jpg)
+
+_CT series of a 35yo female with Covid-19 pneumonia.<br>A= Day 0, B= Day 5, C= Day 11, D= Day 15 post onset._
+
+**Fatal and very severe infection**
+
+ - The changes here are not so well described.
+   - Either the respiratory insult from the pneumonia is enough to cause death, often in the multi-morbid and frail.
+   - or, Adult Respiratory Distress syndrome intervenes normally around or after day 10. Please see below for a description of ARDS.
+   - other organs can also be involved in severe disease including small vessels of the heart and the myocardium itself.
+ - CT changes associated with worse clinical status on admission include
+   - Diffuse vs focal/multifocal distibution.
+   - CT severity score ( = number of lobes x extent of lobe involvement)
+   - _architectural distortion, effusions, traction bronchiectasis are also described as predicting more severe disease_  
+ - Thus, we might expect to describe severe, progressive disease in terms of:
+   - Large volumes of abnormality either at presentation or follow up.
+   - Development of new lesions after about day 10-14 - ? secondary infection or just progressive covid-19.
+   - Failure of any sign of resolution after about 14-21 days
+   - Development of signs of other pathology such as cardiogenic pulmonary oedema. 
+
+----
+
+### Confusing terms.
+Papers describe changes and use terminology which are unclear or can be misunderstood.
+
+#### Reticulation
+- the literature is variable in the frequency and timing of reticulation. 
+- both interlobular and interlobular septal thickening is described. 
+  
+#### Vascular Enlargement
+- not an easy thing to call, would not worry about it.
+- not really described with other pathologies
+
+#### Crazy Paving
+- is ground glass defined by thickened interlobular septa.
+- fairly common in mid to late phase disease.
+
+#### Interlobular 
+
+#### Organising Pneumonia 
+- utterly confusingly used here. SHOULD refer to 
+#### Halo and Atolls
+
+#### Bandlike changes & Dependent changes.
 
 ----
 ## Pathway
@@ -155,9 +221,9 @@ _CT at presentation demonstrating more established change but slightly atypical 
 ## HRCT appearance of other things
 
 ---
-### Covid-19 other resources
+## Covid-19 other resources
 
-#### Colleges / Associations etc
+### Colleges / Associations etc
 
 ---
 

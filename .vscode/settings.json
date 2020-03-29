@@ -80,7 +80,7 @@
     
      //-----------VIM EASYMOTION------------------------------- 
     
-        "vim.easymotion": true,
+        "vim.easymotion": false,
         "vim.easymotionMarkerBackgroundColor": "white",
         "vim.easymotionMarkerFontWeight": "bold",
         "vim.easymotionMarkerForegroundColorOneChar": "black",
