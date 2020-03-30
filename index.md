@@ -140,7 +140,7 @@ Then there are the **NOT** signs may not be related to COVID-19 and may push the
  
 _CT at presentation demonstrating subtle change which progressed on subsequent CTs - if asymptomatic or mild and / or early in disease then the changes can be minimal._
 
-![Obvious change at presentation](images/covid_CT_#1_AJR.jpg)
+![Obvious change at presentation](images\covid_CT_#1_AJR.jpg)
 
 _CT at presentation demonstrating more established change but slightly atypical change. Could call this perilobular or reversed halo. Subsequent CTs demonstrated more foci of ground glass opacity._
 
