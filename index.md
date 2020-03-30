@@ -1,4 +1,3 @@
-<link href="style.css" rel="stylesheet"></link>
 
 # Idiot's Guide to Covid-19 HRCT reporting.
 
