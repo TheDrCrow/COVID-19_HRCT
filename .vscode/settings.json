@@ -26,7 +26,7 @@
         "window.zoomLevel": 0,
     
     //----HTML and other
-       
+        "editor.renderWhitespace": "none",
         "html.mirrorCursorOnMatchingTag": false,
         "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
         "problems.showCurrentInStatus": true,

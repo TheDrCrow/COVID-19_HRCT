@@ -4,18 +4,21 @@
 
 ***At the time of writing the literature on SARS-Cov-2 infection is dominated by small descriptive studies mostly coming out of Wuhan in China. There are significant differences in age (average in many papers = 40 to 50yrs), background morbidity, medical practice and culture which will alter how this disease will present, be interpreted and will probably alter what the findings on radiology are. So, don't expect our experience over the next few months to be the same.***
 
+## Table of Contents.
 <!-- TOC -->
 - [Idiot's Guide to Covid-19 HRCT reporting.](#idiots-guide-to-covid-19-hrct-reporting)
+  - [Table of Contents.](#table-of-contents)
   - [Clinical Features](#clinical-features)
       - [Symptoms and Signs](#symptoms-and-signs)
       - [Timescales](#timescales)
-  - [CXR features](#cxr-features)
-  - [HRCT](#hrct)
-    - [**Classical Features at presentation.**](#classical-features-at-presentation)
-    - [**Change over time.**](#change-over-time)
-    - [Confusing terms.](#confusing-terms)
+  - [**Presentation: CXR features**](#presentation-cxr-features)
+  - [**Presentation: HRCT**](#presentation-hrct)
+    - [**Classical Features.**](#classical-features)
+  - [**Change over time.**](#change-over-time)
+  - [Not so important stuff.](#not-so-important-stuff)
       - [Reticulation](#reticulation)
       - [Vascular Enlargement](#vascular-enlargement)
+      - [Adult Respiratory Distress Syndrome / Diffuse Alveolar Damage](#adult-respiratory-distress-syndrome--diffuse-alveolar-damage)
       - [Crazy Paving](#crazy-paving)
       - [Interlobular](#interlobular)
       - [Organising Pneumonia](#organising-pneumonia)
@@ -23,10 +26,13 @@
       - [Bandlike changes & Dependent changes.](#bandlike-changes--dependent-changes)
   - [Pathway](#pathway)
   - [Reports](#reports)
+    - [**CXR** _(feel free to cut and paste)_](#cxr-feel-free-to-cut-and-paste)
+    - [**HRCT**](#hrct)
   - [HRCT appearance of other things](#hrct-appearance-of-other-things)
   - [Covid-19 other resources](#covid-19-other-resources)
     - [Colleges / Associations etc](#colleges--associations-etc)
   - [References](#references)
+  - [IMAGES.](#images)
 
 ## Clinical Features
 #### Symptoms and Signs
@@ -75,7 +81,7 @@ Changes on HRCT are described soon after onset, so we may expect to see abnormal
 
 ____
 
-## CXR features
+## **Presentation: CXR features**
 
 These will be the first investigation and there is NO direct to HRCT!
 
@@ -96,13 +102,23 @@ The role is twofold:
 
 _CXR in patient presenting with Covid-19 infection - note the patchy, ill-defined, mostly peripheral regions of increased attenuation worse on the right than the left._
 
+
+![Range of changes on plain film Wong et al Rad 2020](images\covid_CXR_types-of-change.jpg)
+
+
+_CXRs demonstrating changes seen at presentation:<br> A= (patchy) consolidation 59% <br>B= pleural effusion 3% <br>C= perihilar distribution 12% <br>D= peripheral distribution 51%._
+
 ---
-## HRCT
 
-Non contrast is better but the changes are not so subtle we will err if we give contrast. Scan the whole chest as a volume as per the protocols. CT chest has been added to all the acute abdomen work to spot the occult / atypical Covid-19. These patients are high risk to staff in the operating theatre and there is a suggestion they are at higher risk as well.
+## **Presentation: HRCT**
 
-### **Classical Features at presentation.**
-The **CLASSICAL APPEARANCES** of an HRCT of a patient presenting with COVID-19 infection are:   
+  * Non contrast whole chest HRCT as per protocol.
+  * With contrast is fine; changes are not so subtle.
+  * Chest has been added to acute abdomen CT A/P as:
+    * CoVID-19 can present with confusion / falls and be incidental.
+    * Positive patients are high mortality risk but also high risk to the surgeons \& others in theatre.
+  
+### **Classical Features.**
 
 1. Ground-glass opacities :  
    * Small and patchy > Large and Solitary  
@@ -145,11 +161,14 @@ _CT at presentation demonstrating subtle change which progressed on subsequent C
 
 _CT at presentation demonstrating more established change but slightly atypical change. Could call this perilobular or reversed halo. Subsequent CTs demonstrated more foci of ground glass opacity._
 
-### **Change over time.**
+---
+
+## **Change over time.**
  
   - Several papers now document changes out to a month. 
     - hampered by variability in practice, timings and record of findings as well as interpretation.
     - general description of both fatal and non-fatal severe infection is developing.
+
 
 **Non-fatal progression and resolution of severe infection**  
 
@@ -172,10 +191,11 @@ _CT series of a 35yo female with Covid-19 pneumonia.<br>A= Day 0, B= Day 5, C= D
 
 **Fatal and very severe infection**
 
- - The changes here are not so well described.
-   - Either the respiratory insult from the pneumonia is enough to cause death, often in the multi-morbid and frail.
-   - or, Adult Respiratory Distress syndrome intervenes normally around or after day 10. Please see below for a description of ARDS.
-   - other organs can also be involved in severe disease including small vessels of the heart and the myocardium itself.
+ - The changes here are not so well described. Either:
+   1. Pneumonia +/- other morbidities => Respiratory failure & Death. Or, 
+   2. Adult Respiratory Distress syndrome intervenes normally around or after day 10. Please see below for a description of ARDS.
+      . Other organs can also be involved in severe disease including small vessels of the heart and the myocardium itself.
+
  - CT changes associated with worse clinical status on admission include
    - Diffuse vs focal/multifocal distibution.
    - CT severity score ( = number of lobes x extent of lobe involvement)
@@ -186,18 +206,30 @@ _CT series of a 35yo female with Covid-19 pneumonia.<br>A= Day 0, B= Day 5, C= D
    - Failure of any sign of resolution after about 14-21 days
    - Development of signs of other pathology such as cardiogenic pulmonary oedema. 
 
+
 ----
 
-### Confusing terms.
-Papers describe changes and use terminology which are unclear or can be misunderstood.
+## Not so important stuff.
+ - lots of terminology is banded around which can be confusing:
 
 #### Reticulation
-- the literature is variable in the frequency and timing of reticulation. 
-- both interlobular and interlobular septal thickening is described. 
-  
+   - If, you look closely at the areas of ground glass there will be really tiny lines in them (intralobular) or slightly bigger hexagonal shapes or lines (interlobular).
+   - the literature is variable in the frequency and timing of reticulation. 
+
 #### Vascular Enlargement
 - not an easy thing to call, would not worry about it.
 - not really described with other pathologies
+
+#### Adult Respiratory Distress Syndrome / Diffuse Alveolar Damage
+  * Or, ARDS and DAD are essentially the same thing with DAD being the pathological findings which define the clinical ARDS.
+  * End point of a range of major insults (not just CoVID) which include infections, trauma, sepsis. 
+  * 3 Stages: 
+    * EXUDATIVE: alveoli become oedematous then necrosis with haemorrhage.
+    * PROLIFERATIVE: 1/52-1/12: Type II pneumocytes invade and proliferate and produce collagen.
+    * FIBROTIC: >1/12: reduction in infiltrate left with interstitial fibrosis. 
+  * Radiology - follows the pathology a bit but mostly lots of ground-glass with dependent regions being more consolidative. So not really distinguishable from a severe infection. Pulmonary oedema generally has more interstitial lines in the acute phase.
+
+
 
 #### Crazy Paving
 - is ground glass defined by thickened interlobular septa.
@@ -216,6 +248,22 @@ Papers describe changes and use terminology which are unclear or can be misunder
 
 ----
 ## Reports
+as per the BSTI/BSUH reporting proforma:
+
+### **CXR** _(feel free to cut and paste)_
+
+|Classification|Findings|REPORT MUST SAY|
+|:----|----|----|
+|Normal| The airspaces are clear. | **Normal** <br>COVID-19 not excluded. Correlate with RT-PCR and if there is a strong clinical suspicion of COVID-19 ( eg sats <94% or NEWS >=3 ) then consider HRCT.|
+|Other Diagnosis| Radiological findings in keeping with another diagnosis that fits the presentation.<br>(PTx/Lobar pneumonia/pleural effusion/pulmonary oedema/etc)| **Non-COVID-19** <br>Imaging appearances are in keeping with a non-COVID-19 diagnosis.|
+|Indeterminate| Is not normal, classical COVID nor another classical diagnosis.| **Indeterminate for COVID-19**<br>Does not fit with Classic or Non-Covid-19. Please assess the patient with all available data.|
+|Classical or Probable<br>COVID-19| Multiple airspace opacities which are mostly lower lobe and/or peripheral and bilateral.| **Classic/Probable COVID-19**. Please isolate and treat as appropriate|
+
+### **HRCT**
+
+|Section|Findings|REPORT WILL/MUST SAY|
+|:----|:----|:----|
+|**Pre-existing<br>lung findings**|None<br>Emphysema<br>Fibrosis<br>|**None**<br>**Emphysema** none/mild/moderate/severe<br>**Fibrosis** none/mild/moderate/severe|
 
 ---
 ## HRCT appearance of other things
@@ -228,5 +276,9 @@ Papers describe changes and use terminology which are unclear or can be misunder
 ---
 
 ## References
+
+---
+
+## IMAGES. 
 
 
