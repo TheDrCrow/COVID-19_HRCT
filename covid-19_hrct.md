@@ -15,6 +15,10 @@
   - [**Presentation: HRCT**](#presentation-hrct)
     - [**Classical Features.**](#classical-features)
   - [**Change over time.**](#change-over-time)
+  - [Pathway](#pathway)
+  - [Reports](#reports)
+    - [**CXR** _(feel free to cut and paste)_](#cxr-feel-free-to-cut-and-paste)
+    - [**HRCT**](#hrct)
   - [Not so important stuff.](#not-so-important-stuff)
       - [Reticulation](#reticulation)
       - [Vascular Enlargement](#vascular-enlargement)
@@ -24,10 +28,6 @@
       - [Organising Pneumonia](#organising-pneumonia)
       - [Halo and Atolls](#halo-and-atolls)
       - [Bandlike changes & Dependent changes.](#bandlike-changes--dependent-changes)
-  - [Pathway](#pathway)
-  - [Reports](#reports)
-    - [**CXR** _(feel free to cut and paste)_](#cxr-feel-free-to-cut-and-paste)
-    - [**HRCT**](#hrct)
   - [HRCT appearance of other things](#hrct-appearance-of-other-things)
   - [Covid-19 other resources](#covid-19-other-resources)
     - [Colleges / Associations etc](#colleges--associations-etc)
@@ -209,6 +209,43 @@ _CT series of a 35yo female with Covid-19 pneumonia.<br>A= Day 0, B= Day 5, C= D
 
 ----
 
+## Pathway
+
+![BSTI Pathway v1] (images\NHSE_BSTI_APPROVED_Radiology_on_CoVid19_v6_modified1__-_Read-Only.xcf)
+
+----
+## Reports
+as per the BSTI/BSUH reporting proforma:
+
+### **CXR** _(feel free to cut and paste)_
+
+|Classification|Findings|REPORT MUST SAY|
+|:----|----|----|
+|Normal| The airspaces are clear. | **Normal** <br>COVID-19 not excluded. Correlate with RT-PCR and if there is a strong clinical <br>suspicion of COVID-19 ( eg sats <94% or NEWS >=3 ) then consider HRCT.|
+|Other Diagnosis| Radiological findings in keeping with another diagnosis that fits the presentation.<br>(PTx/Lobar pneumonia/pleural effusion/pulmonary oedema/etc)| **Non-COVID-19** <br>Imaging appearances are in keeping with a non-COVID-19 diagnosis.|
+|Indeterminate| Is not normal, classical COVID nor another classical diagnosis.| **Indeterminate for COVID-19**<br>Does not fit with Classic or Non-Covid-19. Please assess the patient with all available data.|
+|Classical or Probable<br>COVID-19| Multiple airspace opacities which are mostly lower lobe and/or peripheral and bilateral.| **Classic/Probable COVID-19**. Please isolate and treat as appropriate|
+
+### **HRCT**
+
+|Section|Findings|REPORT WILL/MUST SAY|
+|:----|:----|:----|
+|**Pre-existing<br>lung findings**|None<br>Emphysema<br>Fibrosis<br>|None<br>Emphysema: none/mild/moderate/severe<br>Fibrosis: none/mild/moderate/severe|
+|**Findings**|||
+||***Normal***<br>Normal HRCT<br>No acute change on background abnormality| No acute changes consistent with COVID-19 infection|
+||***Classic/Probable COVID-19***<br>Dominant pattern of ground-glass opacities +/- consolidation.<br>Often bilateral, posterior and basal.<br>+/- crazy-paving/reverse halo/perilobular change|eg "There are several peripheral ground-glass opacities<br> which are mostly in the posterobasal parts of both<br> lungs with foci of consolidation and crazy-paving noted"|
+||***Indeterminate for COVID-19***<br>Does not fit classic COVID-19 pattern or non-COVID-19 pattern or clinical context.<br>Include non-peripheral GGO/ marked unilateral change etc.|eg "There is a focus of ground glass opacity centrally on the left"|
+||***Non-COVID-19***<br>Changes not associated with COVID-19 but sugestive of other differentials<br>Include lobar pneumonia/cavitation/tree-in-bud/centrilobular nodules/lymphadenopathy etc|eg "There are multiple regions of centrilobular nodules and<br> tree-in-bud change more in keeping with xxx and these are<br> not changes described with COVID-19 infection"|
+|**Disease<br>Distribution**| Describe the predominant distribution|Upper / Middle / Lower / Random<br>Central 2/3rds / Peripheral 1/3rd<br>Bronchocentric ( y / n )  |
+|**Other findings**|Heart / mediastinum / pleura / chest wall etc|eg "No other significant abnormality seen"<br>"Note is made of cardiomegaly / pleural effusion" etc|
+|**CONCLUSION:**|||
+||***Normal***|**Normal** <br>Correlate with rt-PCR as CT can be normal early in infecton|
+||***Classic/Probable COVID-19 Diagnosis***<br>Assess _CT severity score_<br>Mild = Pure GGO, <=3 focal abnormalities and ALL <= 3cm<br>Mod/Severe = Consolidation, Pure GGO if > 3 and any >3cm, Architectural distortion|**Classic/Probable COVID-19 Diagnosis**<br>CT severity score = Mild or Moderate/Severe.|
+||***Indeterminate COVID-19 diagnosis***|**Indeterminate COVID-19 diagnosis**<br>Clinical review with all the data is advised|
+||***Non-COVID-19 diagnosis***|**Non-COVID-19 diagnosis**<br>Correlate with rt-PCR as CT can be normal in early infection|
+
+---
+
 ## Not so important stuff.
  - lots of terminology is banded around which can be confusing:
 
@@ -244,28 +281,7 @@ _CT series of a 35yo female with Covid-19 pneumonia.<br>A= Day 0, B= Day 5, C= D
 #### Bandlike changes & Dependent changes.
 
 ----
-## Pathway
 
-----
-## Reports
-as per the BSTI/BSUH reporting proforma:
-
-### **CXR** _(feel free to cut and paste)_
-
-|Classification|Findings|REPORT MUST SAY|
-|:----|----|----|
-|Normal| The airspaces are clear. | **Normal** <br>COVID-19 not excluded. Correlate with RT-PCR and if there is a strong clinical suspicion of COVID-19 ( eg sats <94% or NEWS >=3 ) then consider HRCT.|
-|Other Diagnosis| Radiological findings in keeping with another diagnosis that fits the presentation.<br>(PTx/Lobar pneumonia/pleural effusion/pulmonary oedema/etc)| **Non-COVID-19** <br>Imaging appearances are in keeping with a non-COVID-19 diagnosis.|
-|Indeterminate| Is not normal, classical COVID nor another classical diagnosis.| **Indeterminate for COVID-19**<br>Does not fit with Classic or Non-Covid-19. Please assess the patient with all available data.|
-|Classical or Probable<br>COVID-19| Multiple airspace opacities which are mostly lower lobe and/or peripheral and bilateral.| **Classic/Probable COVID-19**. Please isolate and treat as appropriate|
-
-### **HRCT**
-
-|Section|Findings|REPORT WILL/MUST SAY|
-|:----|:----|:----|
-|**Pre-existing<br>lung findings**|None<br>Emphysema<br>Fibrosis<br>|**None**<br>**Emphysema** none/mild/moderate/severe<br>**Fibrosis** none/mild/moderate/severe|
-
----
 ## HRCT appearance of other things
 
 ---
