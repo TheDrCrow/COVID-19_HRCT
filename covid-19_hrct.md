@@ -4,37 +4,39 @@
 
 ***At the time of writing the literature on SARS-Cov-2 infection is dominated by small descriptive studies mostly coming out of Wuhan in China. There are significant differences in age (average in many papers = 40 to 50yrs), background morbidity, medical practice and culture which will alter how this disease will present, be interpreted and will probably alter what the findings on radiology are. So, don't expect our experience over the next few months to be the same.***
 
-## Table of Contents.
+## **Table of Contents**
 <!-- TOC -->
 - [Idiot's Guide to Covid-19 HRCT reporting.](#idiots-guide-to-covid-19-hrct-reporting)
-  - [Table of Contents.](#table-of-contents)
-  - [Clinical Features](#clinical-features)
+  - [**Table of Contents**](#table-of-contents)
+  - [**Clinical Features**](#clinical-features)
       - [Symptoms and Signs](#symptoms-and-signs)
       - [Timescales](#timescales)
   - [**Presentation: CXR features**](#presentation-cxr-features)
   - [**Presentation: HRCT**](#presentation-hrct)
     - [**Classical Features.**](#classical-features)
   - [**Change over time.**](#change-over-time)
-  - [Pathway](#pathway)
-  - [Reports](#reports)
+  - [**Pathway**](#pathway)
+  - [**Reports**](#reports)
     - [**CXR** _(feel free to cut and paste)_](#cxr-feel-free-to-cut-and-paste)
     - [**HRCT**](#hrct)
-  - [Not so important stuff.](#not-so-important-stuff)
+  - [**Not such important stuff.**](#not-such-important-stuff)
       - [Reticulation](#reticulation)
       - [Vascular Enlargement](#vascular-enlargement)
-      - [Adult Respiratory Distress Syndrome / Diffuse Alveolar Damage](#adult-respiratory-distress-syndrome--diffuse-alveolar-damage)
       - [Crazy Paving](#crazy-paving)
-      - [Interlobular](#interlobular)
+      - [Adult Respiratory Distress Syndrome / Diffuse Alveolar Damage](#adult-respiratory-distress-syndrome--diffuse-alveolar-damage)
       - [Organising Pneumonia](#organising-pneumonia)
-      - [Halo and Atolls](#halo-and-atolls)
+      - [Perilobular](#perilobular)
+      - [Reversed Halo and Atolls](#reversed-halo-and-atolls)
       - [Bandlike changes & Dependent changes.](#bandlike-changes--dependent-changes)
-  - [HRCT appearance of other things](#hrct-appearance-of-other-things)
-  - [Covid-19 other resources](#covid-19-other-resources)
-    - [Colleges / Associations etc](#colleges--associations-etc)
-  - [References](#references)
-  - [IMAGES.](#images)
+  - [**Covid-19 resources**](#covid-19-resources)
+      - [General](#general)
+      - [Image Galleries](#image-galleries)
+      - [Colleges / Associations / Journals](#colleges--associations--journals)
+  - [**HRCT appearances of other things**](#hrct-appearances-of-other-things)
+  - [**Bibliography & References**](#bibliography--references)
+  - [**Other Images**](#other-images)
 
-## Clinical Features
+## **Clinical Features**
 #### Symptoms and Signs
 
 * Variable : Asymptomatic to ARDS with Multiorgan failure.
@@ -159,7 +161,7 @@ _CT at presentation demonstrating subtle change which progressed on subsequent C
 
 ![Obvious change at presentation](images/covid_CT_#1_AJR.jpg)
 
-_CT at presentation demonstrating more established change but slightly atypical change. Could call this perilobular or reversed halo. Subsequent CTs demonstrated more foci of ground glass opacity._
+_CT at presentation demonstrating more established change but slightly atypical change. There is certainly reticulation and one could mention perilobular or reversed halo. Subsequent CTs demonstrated more foci of ground glass opacity._
 
 ---
 
@@ -192,8 +194,9 @@ _CT series of a 35yo female with Covid-19 pneumonia.<br>A= Day 0, B= Day 5, C= D
 **Fatal and very severe infection**
 
  - The changes here are not so well described. Either:
-   1. Pneumonia +/- other morbidities => Respiratory failure & Death. Or, 
+   1. Pneumonia +/- other morbidities => Respiratory failure & Death 💀 Or, 
    2. Adult Respiratory Distress syndrome intervenes normally around or after day 10. Please see below for a description of ARDS.
+      
       . Other organs can also be involved in severe disease including small vessels of the heart and the myocardium itself.
 
  - CT changes associated with worse clinical status on admission include
@@ -206,15 +209,15 @@ _CT series of a 35yo female with Covid-19 pneumonia.<br>A= Day 0, B= Day 5, C= D
    - Failure of any sign of resolution after about 14-21 days
    - Development of signs of other pathology such as cardiogenic pulmonary oedema. 
 
-
 ----
 
-## Pathway
+## **Pathway**
+we are following the BSTI pathway.
 
-![BSTI Pathway v1] (images\NHSE_BSTI_APPROVED_Radiology_on_CoVid19_v6_modified1__-_Read-Only.xcf)
+![BSTI Pathway v1](images\rad_decision_tool_BSTI.jpg)
 
 ----
-## Reports
+## **Reports**
 as per the BSTI/BSUH reporting proforma:
 
 ### **CXR** _(feel free to cut and paste)_
@@ -246,55 +249,173 @@ as per the BSTI/BSUH reporting proforma:
 
 ---
 
-## Not so important stuff.
- - lots of terminology is banded around which can be confusing:
+## **Not such important stuff.**
+ - lots of terminology is banded around which can lead to confusion:
 
 #### Reticulation
    - If, you look closely at the areas of ground glass there will be really tiny lines in them (intralobular) or slightly bigger hexagonal shapes or lines (interlobular).
-   - the literature is variable in the frequency and timing of reticulation. 
+   - the literature is variable in the frequency and timing of reticulation so don't fret over it. 
 
 #### Vascular Enlargement
 - not an easy thing to call, would not worry about it.
-- not really described with other pathologies
+- not really described with other pathologies and not an established fact. ![vascular enlargement](images\covid_CT_vascular-enlargement_AJR.jpg)
+
+_hmm, yeah clearly that vessel is larger than I expect it to be_ 🤔
+
+#### Crazy Paving
+- is ground glass defined by thickened interlobular septa usually with intralobular septal thickening as well.
+- fairly common in mid to late phase disease.
+
+    ![crazypaving](images/crazy-paving_Rad.jpg)
 
 #### Adult Respiratory Distress Syndrome / Diffuse Alveolar Damage
-  * Or, ARDS and DAD are essentially the same thing with DAD being the pathological findings which define the clinical ARDS.
+  * Or, as they are better known, ARDS and DAD are essentially the same thing with DAD being the pathological findings which define the clinical syndrome, ARDS.
   * End point of a range of major insults (not just CoVID) which include infections, trauma, sepsis. 
+   
+      ![ARDS](images\aip_Rad.jpg)
   * 3 Stages: 
     * EXUDATIVE: alveoli become oedematous then necrosis with haemorrhage.
     * PROLIFERATIVE: 1/52-1/12: Type II pneumocytes invade and proliferate and produce collagen.
     * FIBROTIC: >1/12: reduction in infiltrate left with interstitial fibrosis. 
   * Radiology - follows the pathology a bit but mostly lots of ground-glass with dependent regions being more consolidative. So not really distinguishable from a severe infection. Pulmonary oedema generally has more interstitial lines in the acute phase.
-
-
-
-#### Crazy Paving
-- is ground glass defined by thickened interlobular septa.
-- fairly common in mid to late phase disease.
-
-#### Interlobular 
+  * Intensive care clinicians are the best at diagnosing this( sure I saw a mention of a paper recently where their clinical opinion outperformed an ML model ) and will probably tell you this on the form - or at least hint. 
 
 #### Organising Pneumonia 
-- utterly confusingly used here. SHOULD refer to 
-#### Halo and Atolls
+- utterly confusing terminology used here to describe an HRCT appearance but elsewhere is used to describe a pathological finding which is associated with several different insults (infection, collagen vascular disease, hypersensitivity) and clinical syndromes.
+- best through of as 'pneumonia that has organised' - so it has been there for a bit and changed in some way - and best described as 'organising pneumonia pattern' or 'picture'. It is generally appreciated in COVID-19 infection some days after symptom onset.  
 
+    ![organising pneumonia](images/organising-pneumonia_Rad.jpeg)
+
+- generally it consists of peripheral airspace change which can be peribronchial, often associated with certain shapes so 'rounded' or ' linear'and distributions such as perilobular as well as unusual patterns such as reversed halo or atoll signs. (see below)
+
+#### Perilobular 
+- describes changes around the border of the secondary lobule which exceed the linear thickening seen with 'interlobular thickening
+- mostly due to changes around the outer edge of the lobule rather than changes in the interlobular septum.
+  
+    ![perilobular changes](images/perilobular-organising-pneumonia.jpeg)
+
+- seen in covid-19 as part of 'organising pneumonia pattern'
+
+#### Reversed Halo and Atolls
+- describe the same phenomenon and consist of normal (or less abnormal) lung surrounded by consolidative lung which is either a ring (=halo) or not quite complete (=atoll).
+- seen in Covid-19 as part of the 'organising pneumonia picture'.
+
+  ![reversed halo](images/covid_CT_reversed-halo_AJR.jpg)
+  
 #### Bandlike changes & Dependent changes.
+- can be confusing and tricky to say if an abnormality in a dependent part of lung is due to dependency or real pathology at the best of times. 
+- made all the more confusing by some literature referring to 'bandlike' opacities in Covid-19.
+
+    ![bandlike COvid](images/covid_CT_band-like-opacity_BSTI.jpg)
+
+    _bandlike opacity in the posterior right lung in a Covid-19 patient: note no volume loss, well defined focal lesion_
+
+    ![dependent change](images/subpleural_dependent_atelectasis.jpeg)
+
+    _dependent change: note more linear and wider distributed with some volume loss_
 
 ----
 
-## HRCT appearance of other things
+## **Covid-19 resources**
+
+
+#### General 
+
+  - [Covid-19 at Dynamed](https://www.dynamed.com/condition/covid-19-novel-coronavirus#TOPIC_XNV_WR5_PKB__LI_JH4_2QJ_4KB)
+
+#### Image Galleries
+
+  - [RADIOLOGY](https://pubs.rsna.org/2019-ncov)
+  - [BSTI](https://www.bsti.org.uk/)
+  - [STR Videos](https://veritastv.org/programs/covid-19)
+
+#### Colleges / Associations / Journals
+
+  - [AJR](https://www.ajronline.org/topic/cov19)
+  - [RCR](https://www.rcr.ac.uk/college/coronavirus-covid-19-what-rcr-doing)
+  - [RANZCR](https://www.ranzcr.com/our-work/coronavirus/resources-and-useful-links)
+  - [NEJM](https://www.nejm.org/coronavirus)
+  - [Lancet](https://www.thelancet.com/coronavirus) 
 
 ---
-## Covid-19 other resources
 
-### Colleges / Associations etc
+## **HRCT appearances of other things**
+
+**UIP / CFA**
+
+![uip/cfa](images/UIP.jpeg)
+
+_usual interstital pneumonia is the histological findings in patients with cryptogenic fibrosing alveolitis._ 
+
+**Pulmonary oedema**
+
+![fluidoverload](images/interlobular-septal-thickening_Rad.jpeg)
+
+_pleural effusions and nice demonstration of interlobular septal thickening is someone with gross fluid overload._
 
 ---
 
-## References
+## **Bibliography & References**
+all the above and all the images are derived from the following sources _sorry for not attributing properly yet._
+
+    1.Wong HYF, Lam HYS, Fong AH-T, et al. Frequency and Distribution of Chest Radiographic Findings in COVID-19 Positive Patients. Radiology 2020. https://doi.org/https://doi.org/10.1148/radiol.2020201160.
+  
+    2.Lu X, Zhang L, Du H, et al. SARS-CoV-2 Infection in Children. New England Journal of Medicine 2020;0(0):null. https://doi.org/10.1056/NEJMc2005073.
+  
+    3.COVID-19 (Novel Coronavirus) n.d. https://www.dynamed.com/condition/covid-19-novel-coronavirus (accessed March 29, 2020).
+  
+    4.Clinical course and risk factors for mortality of adult inpatients with COVID-19 in Wuhan, China: a retrospective cohort study- ClinicalKey n.d. https://www.clinicalkey.com/#!/content/journal/1-s2.0-S0140673620305663 (accessed March 29, 2020).
+  
+    5.Daniel Kaul MD. Risk Factors for ARDS and Progression to Death Among COVID-19 Patients. NEJM Journal Watch 2020;2020. https://doi.org/10.1056/nejm-jw.NA51132.
+  
+    6.Shi H, Han X, Jiang N, et al. Radiological findings from 81 patients with COVID-19 pneumonia in Wuhan, China: a descriptive study. The Lancet Infectious Diseases 2020;20(4):425–34. https://doi.org/10.1016/S1473-3099(20)30086-4.
+  
+    7.COVID-19: consider cytokine storm syndromes and immunosuppression- ClinicalKey n.d. https://www.clinicalkey.com/#!/content/journal/1-s2.0-S0140673620306280 (accessed March 29, 2020).
+  
+    8.Zhao W, Zhong Z, Xie X, Yu Q, Liu J. Relation Between Chest CT Findings and Clinical Conditions of Coronavirus Disease (COVID-19) Pneumonia: A Multicenter Study. American Journal of Roentgenology 2020:1–6. https://doi.org/10.2214/AJR.20.22976.
+  
+    9.Li Y, Xia L. Coronavirus Disease 2019 (COVID-19): Role of Chest CT in Diagnosis and Management. American Journal of Roentgenology 2020:1–7. https://doi.org/10.2214/AJR.20.22954.
+  
+    10.Salehi S, Abedi A, Balakrishnan S, Gholamrezanezhad A. Coronavirus Disease 2019 (COVID-19): A Systematic Review of Imaging Findings in 919 Patients. American Journal of Roentgenology 2020:1–7. https://doi.org/10.2214/AJR.20.23034.
+  
+    11.Cheng Z, Lu Y, Cao Q, et al. Clinical Features and Chest CT Manifestations of Coronavirus Disease 2019 (COVID-19) in a Single-Center Study in Shanghai, China. American Journal of Roentgenology 2020:1–6. https://doi.org/10.2214/AJR.20.22959.
+  
+    12.Han R, Huang L, Jiang H, Dong J, Peng H, Zhang D. Early Clinical and CT Manifestations of Coronavirus Disease 2019 (COVID-19) Pneumonia. American Journal of Roentgenology 2020:1–6. https://doi.org/10.2214/AJR.20.22961.
+  
+    13.Liu D, Li L, Wu X, et al. Pregnancy and Perinatal Outcomes of Women With Coronavirus Disease (COVID-19) Pneumonia: A Preliminary Analysis. American Journal of Roentgenology 2020:1–6. https://doi.org/10.2214/AJR.20.23072.
+  
+    14.Guan W, Liu J, Yu C. CT Findings of Coronavirus Disease (COVID-19) Severe Pneumonia. American Journal of Roentgenology 2020:W1–2. https://doi.org/10.2214/AJR.20.23035.
+  
+    15.Ng M-Y, Lee EY, Yang J, et al. Imaging Profile of the COVID-19 Infection: Radiologic Findings and Literature Review. Radiology: Cardiothoracic Imaging 2020;2(1):e200034. https://doi.org/10.1148/ryct.2020200034.
+  
+    16.Pan F, Ye T, Sun P, et al. Time Course of Lung Changes On Chest CT During Recovery From 2019 Novel Coronavirus (COVID-19) Pneumonia. Radiology 2020:200370. https://doi.org/10.1148/radiol.2020200370.
+  
+    17.Ai T, Yang Z, Hou H, et al. Correlation of Chest CT and RT-PCR Testing in Coronavirus Disease 2019 (COVID-19) in China: A Report of 1014 Cases. Radiology 2020:200642. https://doi.org/10.1148/radiol.2020200642.
+  
+    18.Bai HX, Hsieh B, Xiong Z, et al. Performance of radiologists in differentiating COVID-19 from viral pneumonia on chest CT. Radiology 2020:200823. https://doi.org/10.1148/radiol.2020200823.
+  
+    19.Inui S, Fujikawa A, Jitsu M, et al. Chest CT Findings in Cases from the Cruise Ship “Diamond Princess” with Coronavirus Disease 2019 (COVID-19). Radiology: Cardiothoracic Imaging 2020;2(2):e200110. https://doi.org/10.1148/ryct.2020200110.
+  
+    20.Li L, Qin L, Xu Z, et al. Artificial Intelligence Distinguishes COVID-19 from Community Acquired Pneumonia on Chest CT. Radiology 2020:200905. https://doi.org/10.1148/radiol.2020200905.
+  
+    21.Wong HYF, Lam HYS, Fong AH-T, et al. Frequency and Distribution of Chest Radiographic Findings in COVID-19 Positive Patients. Radiology 2020:201160. https://doi.org/10.1148/radiol.2020201160.
+  
+    22.Wang Y, Dong C, Hu Y, et al. Temporal Changes of CT Findings in 90 Patients with COVID-19 Pneumonia: A Longitudinal Study. Radiology 2020:200843. https://doi.org/10.1148/radiol.2020200843.
+  
+    23.Bernheim A, Mei X, Huang M, et al. Chest CT Findings in Coronavirus Disease-19 (COVID-19): Relationship to Duration of Infection. Radiology 2020:200463. https://doi.org/10.1148/radiol.2020200463.
+  
+    24.Hansell DM, Bankier AA, MacMahon H, McLoud TC, Müller NL, Remy J. Fleischner Society: Glossary of Terms for Thoracic Imaging. Radiology 2008;246(3):697–722. https://doi.org/10.1148/radiol.2462070712.
+  
+    25.2019 Novel Coronavirus (COVID-19) n.d. https://pubs.rsna.org/2019-nCoV (accessed March 25, 2020).
+  
+    26.Kanne JP, Little BP, Chung JH, Elicker BM, Ketai LH. Essentials for Radiologists on COVID-19: An Update—Radiology Scientific Expert Panel. Radiology 2020:200527. https://doi.org/10.1148/radiol.2020200527.
+  
+    27.Helpful documents to plan COVID response | The Royal College of Radiologists n.d. https://www.rcr.ac.uk/network/helpful-documents-plan-covid-response (accessed March 25, 2020).
+  
+
 
 ---
 
-## IMAGES. 
+## **Other Images** 
 
 
