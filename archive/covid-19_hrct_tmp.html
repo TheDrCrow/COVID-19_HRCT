@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>covid-19_hrct.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<link href="style.css" rel="stylesheet">
+<h1 id="idiots-guide-to-covid-19-hrct-reporting">Idiot's Guide to Covid-19 HRCT reporting.</h1>
+<p><em><strong>At the time of writing the literature on SARS-Cov-2 infection is dominated by small descriptive studies mostly coming out of Wuhan in China. There are significant differences in age (average in many papers = 40 to 50yrs), background morbidity, medical practice and culture which will alter how this disease will present, be interpreted and will probably alter what the findings on radiology are. So, don't expect our experience over the next few months to be the same.</strong></em></p>
+<h2 id="table-of-contents">Table of Contents.</h2>
+<!-- TOC -->
+<ul>
+<li><a href="#idiots-guide-to-covid-19-hrct-reporting">Idiot's Guide to Covid-19 HRCT reporting.</a>
+<ul>
+<li><a href="#table-of-contents">Table of Contents.</a></li>
+<li><a href="#clinical-features">Clinical Features</a>
+<ul>
+<li><a href="#symptoms-and-signs">Symptoms and Signs</a></li>
+<li><a href="#timescales">Timescales</a></li>
+</ul>
+</li>
+<li><a href="#cxr-features">CXR features</a></li>
+<li><a href="#hrct">HRCT</a>
+<ul>
+<li><a href="#classical-features-at-presentation"><strong>Classical Features at presentation.</strong></a></li>
+<li><a href="#change-over-time"><strong>Change over time.</strong></a></li>
+<li><a href="#confusing-terms">Confusing terms.</a>
+<ul>
+<li><a href="#reticulation">Reticulation</a></li>
+<li><a href="#vascular-enlargement">Vascular Enlargement</a></li>
+<li><a href="#crazy-paving">Crazy Paving</a></li>
+<li><a href="#interlobular">Interlobular</a></li>
+<li><a href="#organising-pneumonia">Organising Pneumonia</a></li>
+<li><a href="#halo-and-atolls">Halo and Atolls</a></li>
+<li><a href="#bandlike-changes--dependent-changes">Bandlike changes &amp; Dependent changes.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#pathway">Pathway</a></li>
+<li><a href="#reports">Reports</a></li>
+<li><a href="#hrct-appearance-of-other-things">HRCT appearance of other things</a></li>
+<li><a href="#covid-19-other-resources">Covid-19 other resources</a>
+<ul>
+<li><a href="#colleges--associations-etc">Colleges / Associations etc</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="clinical-features">Clinical Features</h2>
+<h4 id="symptoms-and-signs">Symptoms and Signs</h4>
+<ul>
+<li>
+<p>Variable : Asymptomatic to ARDS with Multiorgan failure.</p>
+<ul>
+<li>~80% Mild</li>
+<li>~20% Need admission</li>
+<li>~5% Need ventilation</li>
+<li>73% of positives on Corona Princess were asymptomatic but 53% of these had ground glass opacities on CT Chest.</li>
+</ul>
+</li>
+<li>
+<p>Presenting Features:</p>
+<ol>
+<li>Common
+<ul>
+<li>Fever</li>
+<li>Cough</li>
+<li>Lethargy</li>
+</ul>
+</li>
+<li>Less Common
+<ul>
+<li>Shortness of breath (normally develops after the cough / fever.)</li>
+<li>Loss of Smell and / or Taste</li>
+<li>Pain - can be muscular and / or headache.</li>
+<li>Diarrhoea and vomiting.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>Predictors of severe illness / death</p>
+<ul>
+<li>Age</li>
+<li>Co-morbidities
+<ul>
+<li>Cardiovascular disease</li>
+<li>Diabetes</li>
+<li>Hypertension</li>
+<li>Chronic respiratory disease</li>
+</ul>
+</li>
+<li>Sex M &gt; F</li>
+<li><em>Raised BMI</em></li>
+<li><em>Poor Functional Status</em></li>
+</ul>
+</li>
+<li>
+<p>Clinical predictors of severe illness / death</p>
+<ul>
+<li>low SaO2 on room air.</li>
+<li>Raised LDH</li>
+<li>Raised CRP</li>
+<li>Low lymphocytes</li>
+</ul>
+</li>
+</ul>
+<h4 id="timescales">Timescales</h4>
+<ul>
+<li>Mild: generally resolve over 1/52. (cough can be many weeks)</li>
+<li>Severe cases: generally progress over 7-10 days. Many will be in ITU at this point.</li>
+<li>90% of deaths are from 10th to 28th day; peaking at Day 14.</li>
+</ul>
+<p>Changes on HRCT are described soon after onset, so we may expect to see abnormalities on most of the referral but only 55% of patients had abnormalities on HRCT from day 0-2 of infection.</p>
+<hr>
+<h2 id="cxr-features">CXR features</h2>
+<p>These will be the first investigation and there is NO direct to HRCT!</p>
+<p>The role is twofold:</p>
+<ol>
+<li>
+<p>Identify the other causes of acute SoB.</p>
+<ul>
+<li>Lobar, or at least unilateral consolidation and other features of infection . <em>Covid-19 is rarely simultaneously obvious AND unilateral.</em></li>
+<li>Pneumothorax. <em>Should be obvious.</em></li>
+<li>Pulmonary oedema. <em>Pleural effusions are unusual in Covid-19 infection and rare at presentation as are marked interstitial changes.</em></li>
+</ul>
+</li>
+<li>
+<p>Positively identify the classical features of Covid-19 infection.</p>
+<ul>
+<li>Patchy, bilateral airspace changes</li>
+<li>Mostly subtle as more ground glass than consolidation.</li>
+</ul>
+<p>Combined with a decent history and other predictive elements ( Lymphopenia and / or Fever ) this has an adequate post-test probability to move straight into isolation without the need for a CT .<br>
+This leaves a large group of patients with normal CXRs and good histories or patients with reasonable or good histories and some, but not specific CXR findings. For instance infective exacerbation of COPD. These patients will need an HRCT.</p>
+</li>
+</ol>
+<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_cxr_faint_airspace.jpg" alt="Faint patchy airspace opacities at presentation"></p>
+<p><em>CXR in patient presenting with Covid-19 infection - note the patchy, ill-defined, mostly peripheral regions of increased attenuation worse on the right than the left.</em></p>
+<hr>
+<h2 id="hrct">HRCT</h2>
+<p>Non contrast is better but the changes are not so subtle we will err if we give contrast. Scan the whole chest as a volume as per the protocols. CT chest has been added to all the acute abdomen work to spot the occult / atypical Covid-19. These patients are high risk to staff in the operating theatre and there is a suggestion they are at higher risk as well.</p>
+<h3 id="classical-features-at-presentation"><strong>Classical Features at presentation.</strong></h3>
+<p>The <strong>CLASSICAL APPEARANCES</strong> of an HRCT of a patient presenting with COVID-19 infection are:</p>
+<ol>
+<li>
+<p>Ground-glass opacities :</p>
+<ul>
+<li>Small and patchy &gt; Large and Solitary</li>
+<li>Basal &gt; Apical and Posterior &gt; Anterior.</li>
+<li>Consolidation - nearly always in combination with the ground-glass opacities, rarely on its own.</li>
+</ul>
+</li>
+<li>
+<p>Err that is about it in terms of 'classical features' . Without ground-glass / mixed opacities it is unlikely to be Covid-19 and of course there are multiple virus and other pathogens and insults that can cause this so it is non-specific.</p>
+</li>
+</ol>
+<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_moderate_airspace_opacities.jpg" alt="Classical CT at presentation"></p>
+<p><em>Typical CT at presentation with moderate size airspace opacities, which are bilateral, basal and mostly peripheral.</em></p>
+<p>Then there are <strong>NOT-CLASSICAL APPEARANCES</strong> or occasional features often seen further into the course of the illness.</p>
+<ol>
+<li>Reticulation in association with the nodules</li>
+<li>Round opacities &gt; linear opacities</li>
+<li>Vascular prominence.</li>
+<li>Crazy-paving / Perilobular changes.</li>
+<li>Reverse Halo / Atoll sign - though this is rare.</li>
+</ol>
+<p>Then there are the <strong>NOT</strong> signs may not be related to COVID-19 and may push the differential toward something else.</p>
+<ol>
+<li>Cavitation</li>
+<li>Pleural effusion</li>
+<li>Thoracic lymphadenopathy</li>
+<li>Bronchial wall thickening is seen in a minority but mostly late and might be chronic.</li>
+<li>Widespread fibrosis.</li>
+</ol>
+<blockquote>
+<p><strong>NB</strong> <br>
+Background changes ( emphysema, fibrosis etc ) are common and might predict worse prognosis. <br>
+The literature on the 'occasional' findings is heterogeneous.<br>
+e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
+</blockquote>
+<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_small_airspace_lesions_small.jpg" alt="Subtle change at presentation"></p>
+<p><em>CT at presentation demonstrating subtle change which progressed on subsequent CTs - if asymptomatic or mild and / or early in disease then the changes can be minimal.</em></p>
+<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_%231_AJR.jpg" alt="Obvious change at presentation"></p>
+<p><em>CT at presentation demonstrating more established change but slightly atypical change. Could call this perilobular or reversed halo. Subsequent CTs demonstrated more foci of ground glass opacity.</em></p>
+<h3 id="change-over-time"><strong>Change over time.</strong></h3>
+<ul>
+<li>Several papers now document changes out to a month.
+<ul>
+<li>hampered by variability in practice, timings and record of findings as well as interpretation.</li>
+<li>general description of both fatal and non-fatal severe infection is developing.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Non-fatal progression and resolution of severe infection</strong></p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Days</th>
+<th>Findings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Early</td>
+<td>0-4</td>
+<td>None ( esp 0-2 days)<br>Low volume, subpleural, lower lobe GGOs.<br>Unilateral or bilateral</td>
+</tr>
+<tr>
+<td>Progressive</td>
+<td>5-8</td>
+<td>Rapid increase in size and number to bilateral multilobed with diffuse GGO.<br>Consolidation and crazy-paving described.</td>
+</tr>
+<tr>
+<td>Peak</td>
+<td>9-13</td>
+<td>No new lesions.<br>Increase in attenuation in lesions now with dense consolidation<br>Crazy-paving and parenchymal bands more common.</td>
+</tr>
+<tr>
+<td>Absorption</td>
+<td>14-28</td>
+<td>Gradual resorption of consolidation.<br>Appears to be more GGO as the consolidation reduces.<br>No crazy paving.</td>
+</tr>
+</tbody>
+</table>
+<p>90% + of scans carried out at Day 24-28 will be abnormal - mostly still some airspace change.</p>
+<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_resolution-series_AJR.jpg" alt="CT demonstrating a moderate pneumonia with resolution, Pan et al Radiol 2020 in press "></p>
+<p><em>CT series of a 47yo female demonstrating the changes and resolution of a covid-19 infection.<br> A= 3 days post onset, B = 7 days post onset, C = 11 days post onset with signs of improvement which is early, D= 20 days</em></p>
+<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_resolution_series2.jpg" alt="CT pattern of resolution over time Wang et al Radiol in press"></p>
+<p><em>CT series of a 35yo female with Covid-19 pneumonia.<br>A= Day 0, B= Day 5, C= Day 11, D= Day 15 post onset.</em></p>
+<p><strong>Fatal and very severe infection</strong></p>
+<ul>
+<li>The changes here are not so well described.
+<ul>
+<li>Either the respiratory insult from the pneumonia is enough to cause death, often in the multi-morbid and frail.</li>
+<li>or, Adult Respiratory Distress syndrome intervenes normally around or after day 10. Please see below for a description of ARDS.</li>
+<li>other organs can also be involved in severe disease including small vessels of the heart and the myocardium itself.</li>
+</ul>
+</li>
+<li>CT changes associated with worse clinical status on admission include
+<ul>
+<li>Diffuse vs focal/multifocal distibution.</li>
+<li>CT severity score ( = number of lobes x extent of lobe involvement)</li>
+<li><em>architectural distortion, effusions, traction bronchiectasis are also described as predicting more severe disease</em></li>
+</ul>
+</li>
+<li>Thus, we might expect to describe severe, progressive disease in terms of:
+<ul>
+<li>Large volumes of abnormality either at presentation or follow up.</li>
+<li>Development of new lesions after about day 10-14 - ? secondary infection or just progressive covid-19.</li>
+<li>Failure of any sign of resolution after about 14-21 days</li>
+<li>Development of signs of other pathology such as cardiogenic pulmonary oedema.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="confusing-terms">Confusing terms.</h3>
+<p>Papers describe changes and use terminology which are unclear or can be misunderstood.</p>
+<h4 id="reticulation">Reticulation</h4>
+<ul>
+<li>the literature is variable in the frequency and timing of reticulation.</li>
+<li>both interlobular and interlobular septal thickening is described.</li>
+</ul>
+<h4 id="vascular-enlargement">Vascular Enlargement</h4>
+<ul>
+<li>not an easy thing to call, would not worry about it.</li>
+<li>not really described with other pathologies</li>
+</ul>
+<h4 id="crazy-paving">Crazy Paving</h4>
+<ul>
+<li>is ground glass defined by thickened interlobular septa.</li>
+<li>fairly common in mid to late phase disease.</li>
+</ul>
+<h4 id="interlobular">Interlobular</h4>
+<h4 id="organising-pneumonia">Organising Pneumonia</h4>
+<ul>
+<li>utterly confusingly used here. SHOULD refer to</li>
+</ul>
+<h4 id="halo-and-atolls">Halo and Atolls</h4>
+<h4 id="bandlike-changes--dependent-changes">Bandlike changes &amp; Dependent changes.</h4>
+<hr>
+<h2 id="pathway">Pathway</h2>
+<hr>
+<h2 id="reports">Reports</h2>
+<hr>
+<h2 id="hrct-appearance-of-other-things">HRCT appearance of other things</h2>
+<hr>
+<h2 id="covid-19-other-resources">Covid-19 other resources</h2>
+<h3 id="colleges--associations-etc">Colleges / Associations etc</h3>
+<hr>
+<h2 id="references">References</h2>
+
+</body>
+</html>

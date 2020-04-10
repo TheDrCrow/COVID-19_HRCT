@@ -1,371 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>covid-19_hrct.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
-<style>
-/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
-body {
-	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
-	font-size: var(--vscode-markdown-font-size, 14px);
-	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 22px);
-	word-wrap: break-word;
-}
-
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
-
-body.showEditorSelection .code-line {
-	position: relative;
-}
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
-
-.vscode-light.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
-
-.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left-width: 5px;
-	border-left-style: solid;
-}
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 1em;
-	line-height: 1.357em;
-}
-
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
-
-pre code {
-	color: var(--vscode-editor-foreground);
-	tab-size: 4;
-}
-
-/** Theming */
-
-.vscode-light pre {
-	background-color: rgba(220, 220, 220, 0.4);
-}
-
-.vscode-dark pre {
-	background-color: rgba(10, 10, 10, 0.4);
-}
-
-.vscode-high-contrast pre {
-	background-color: rgb(0, 0, 0);
-}
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
-}
-
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Idiot's Guide to Covid-19 HRCT reporting.</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
 </style>
-
-<style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
-}
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
-
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
-
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
-}
-</style>
-
-<style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-	padding: 0 12px;
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-code {
-	font-size: 14px;
-	line-height: 19px;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
-}
-
-</style>
-
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-</head>
-<body>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
-    });
-  </script>
-<link href="style.css" rel="stylesheet">
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <link href="style.css" rel="stylesheet"></link>
 <h1 id="idiots-guide-to-covid-19-hrct-reporting">Idiot's Guide to Covid-19 HRCT reporting.</h1>
 <p><em><strong>At the time of writing the literature on SARS-Cov-2 infection is dominated by small descriptive studies mostly coming out of Wuhan in China. There are significant differences in age (average in many papers = 40 to 50yrs), background morbidity, medical practice and culture which will alter how this disease will present, be interpreted and will probably alter what the findings on radiology are. So, don't expect our experience over the next few months to be the same.</strong></em></p>
 <h2 id="table-of-contents"><strong>Table of Contents</strong></h2>
@@ -508,9 +164,9 @@ code {
 This leaves a large group of patients with normal CXRs and good histories or patients with reasonable or good histories and some, but not specific CXR findings. For instance infective exacerbation of COPD. These patients will need an HRCT.</p>
 </li>
 </ol>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_cxr_faint_airspace.jpg" alt="Faint patchy airspace opacities at presentation"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\covid_cxr_faint_airspace.jpg" alt="Faint patchy airspace opacities at presentation"></p>
 <p><em>CXR in patient presenting with Covid-19 infection - note the patchy, ill-defined, mostly peripheral regions of increased attenuation worse on the right than the left.</em></p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CXR_types-of-change.jpg" alt="Range of changes on plain film Wong et al Rad 2020"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\covid_CXR_types-of-change.jpg" alt="Range of changes on plain film Wong et al Rad 2020"></p>
 <p><em>CXRs demonstrating changes seen at presentation:<br> A= (patchy) consolidation 59% <br>B= pleural effusion 3% <br>C= perihilar distribution 12% <br>D= peripheral distribution 51%.</em></p>
 <hr>
 <h2 id="presentation-hrct"><strong>Presentation: HRCT</strong></h2>
@@ -538,7 +194,7 @@ This leaves a large group of patients with normal CXRs and good histories or pat
 <p>Err that is about it in terms of 'classical features' . Without ground-glass / mixed opacities it is unlikely to be Covid-19 and of course there are multiple virus and other pathogens and insults that can cause this so it is non-specific.</p>
 </li>
 </ol>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_moderate_airspace_opacities.jpg" alt="Classical CT at presentation"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images%5Ccovid_CT_moderate_airspace_opacities.jpg" alt="Classical CT at presentation"></p>
 <p><em>Typical CT at presentation with moderate size airspace opacities, which are bilateral, basal and mostly peripheral.</em></p>
 <p>Then there are <strong>NOT-CLASSICAL APPEARANCES</strong> or occasional features often seen further into the course of the illness.</p>
 <ol>
@@ -562,9 +218,9 @@ Background changes ( emphysema, fibrosis etc ) are common and might predict wors
 The literature on the 'occasional' findings is heterogeneous.<br>
 e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 </blockquote>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_small_airspace_lesions_small.jpg" alt="Subtle change at presentation"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images%5Ccovid_CT_small_airspace_lesions_small.jpg" alt="Subtle change at presentation"></p>
 <p><em>CT at presentation demonstrating subtle change which progressed on subsequent CTs - if asymptomatic or mild and / or early in disease then the changes can be minimal.</em></p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_%231_AJR.jpg" alt="Obvious change at presentation"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\covid_CT_#1_AJR.jpg" alt="Obvious change at presentation"></p>
 <p><em>CT at presentation demonstrating more established change but slightly atypical change. There is certainly reticulation and one could mention perilobular or reversed halo. Subsequent CTs demonstrated more foci of ground glass opacity.</em></p>
 <hr>
 <h2 id="change-over-time"><strong>Change over time.</strong></h2>
@@ -609,9 +265,9 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 </tbody>
 </table>
 <p>90% + of scans carried out at Day 24-28 will be abnormal - mostly still some airspace change.</p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_resolution-series_AJR.jpg" alt="CT demonstrating a moderate pneumonia with resolution, Pan et al Radiol 2020 in press "></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images%5Ccovid_CT_resolution-series_AJR.jpg" alt="CT demonstrating a moderate pneumonia with resolution, Pan et al Radiol 2020 in press "></p>
 <p><em>CT series of a 47yo female demonstrating the changes and resolution of a covid-19 infection.<br> A= 3 days post onset, B = 7 days post onset, C = 11 days post onset with signs of improvement which is early, D= 20 days</em></p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_resolution_series2.jpg" alt="CT pattern of resolution over time Wang et al Radiol in press"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images%5Ccovid_CT_resolution_series2.jpg" alt="CT pattern of resolution over time Wang et al Radiol in press"></p>
 <p><em>CT series of a 35yo female with Covid-19 pneumonia.<br>A= Day 0, B= Day 5, C= Day 11, D= Day 15 post onset.</em></p>
 <p><strong>Fatal and very severe infection</strong></p>
 <ul>
@@ -648,7 +304,7 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 <hr>
 <h2 id="pathway"><strong>Pathway</strong></h2>
 <p>we are following the BSTI pathway.</p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/rad_decision_tool_BSTI.jpg" alt="BSTI Pathway v1"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images%5Crad_decision_tool_BSTI.jpg" alt="BSTI Pathway v1"></p>
 <hr>
 <h2 id="reports"><strong>Reports</strong></h2>
 <p>as per the BSTI/BSUH reporting proforma:</p>
@@ -774,7 +430,7 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 <h4 id="vascular-enlargement">Vascular Enlargement</h4>
 <ul>
 <li>not an easy thing to call, would not worry about it.</li>
-<li>not really described with other pathologies and not an established fact. <img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_vascular-enlargement_AJR.jpg" alt="vascular enlargement"></li>
+<li>not really described with other pathologies and not an established fact. <img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images%5Ccovid_CT_vascular-enlargement_AJR.jpg" alt="vascular enlargement"></li>
 </ul>
 <p><em>hmm, yeah clearly that vessel is larger than I expect it to be</em> 🤔</p>
 <h4 id="crazy-paving">Crazy Paving</h4>
@@ -784,7 +440,7 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 </li>
 <li>
 <p>fairly common in mid to late phase disease.</p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/crazy-paving_Rad.jpg" alt="crazypaving"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\crazy-paving_Rad.jpg" alt="crazypaving"></p>
 </li>
 </ul>
 <h4 id="adult-respiratory-distress-syndrome--diffuse-alveolar-damage">Adult Respiratory Distress Syndrome / Diffuse Alveolar Damage</h4>
@@ -794,7 +450,7 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 </li>
 <li>
 <p>End point of a range of major insults (not just CoVID) which include infections, trauma, sepsis.</p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/aip_Rad.jpg" alt="ARDS"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images%5Caip_Rad.jpg" alt="ARDS"></p>
 </li>
 <li>
 <p>3 Stages:</p>
@@ -818,7 +474,7 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 </li>
 <li>
 <p>best through of as 'pneumonia that has organised' - so it has been there for a bit and changed in some way - and best described as 'organising pneumonia pattern' or 'picture'. It is generally appreciated in COVID-19 infection some days after symptom onset.</p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/organising-pneumonia_Rad.jpeg" alt="organising pneumonia"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\organising-pneumonia_Rad.jpeg" alt="organising pneumonia"></p>
 </li>
 <li>
 <p>generally it consists of peripheral airspace change which can be peribronchial, often associated with certain shapes so 'rounded' or ' linear'and distributions such as perilobular as well as unusual patterns such as reversed halo or atoll signs. (see below)</p>
@@ -831,7 +487,7 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 </li>
 <li>
 <p>mostly due to changes around the outer edge of the lobule rather than changes in the interlobular septum.</p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/perilobular-organising-pneumonia.jpeg" alt="perilobular changes"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\perilobular-organising-pneumonia.jpeg" alt="perilobular changes"></p>
 </li>
 <li>
 <p>seen in covid-19 as part of 'organising pneumonia pattern'</p>
@@ -844,7 +500,7 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 </li>
 <li>
 <p>seen in Covid-19 as part of the 'organising pneumonia picture'.</p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_reversed-halo_AJR.jpg" alt="reversed halo"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\covid_CT_reversed-halo_AJR.jpg" alt="reversed halo"></p>
 </li>
 </ul>
 <h4 id="bandlike-changes--dependent-changes">Bandlike changes &amp; Dependent changes.</h4>
@@ -854,9 +510,9 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 </li>
 <li>
 <p>made all the more confusing by some literature referring to 'bandlike' opacities in Covid-19.</p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/covid_CT_band-like-opacity_BSTI.jpg" alt="bandlike COvid"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\covid_CT_band-like-opacity_BSTI.jpg" alt="bandlike COvid"></p>
 <p><em>bandlike opacity in the posterior right lung in a Covid-19 patient: note no volume loss, well defined focal lesion</em></p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/subpleural_dependent_atelectasis.jpeg" alt="dependent change"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\subpleural_dependent_atelectasis.jpeg" alt="dependent change"></p>
 <p><em>dependent change: note more linear and wider distributed with some volume loss</em></p>
 </li>
 </ul>
@@ -883,10 +539,10 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 <hr>
 <h2 id="hrct-appearances-of-other-things"><strong>HRCT appearances of other things</strong></h2>
 <p><strong>UIP / CFA</strong></p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/UIP.jpeg" alt="uip/cfa"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\UIP.jpeg" alt="uip/cfa"></p>
 <p><em>usual interstital pneumonia is the histological findings in patients with cryptogenic fibrosing alveolitis.</em></p>
 <p><strong>Pulmonary oedema</strong></p>
-<p><img src="file:///s:/Radiology/Shared Medical Imaging/Covid-19_HRCT/images/interlobular-septal-thickening_Rad.jpeg" alt="fluidoverload"></p>
+<p><img src="file:///s:\Radiology\Shared Medical Imaging\Covid-19_HRCT\images\interlobular-septal-thickening_Rad.jpeg" alt="fluidoverload"></p>
 <p><em>pleural effusions and nice demonstration of interlobular septal thickening is someone with gross fluid overload.</em></p>
 <hr>
 <h2 id="bibliography--references"><strong>Bibliography &amp; References</strong></h2>
@@ -948,5 +604,5 @@ e.g. 'reticulation' - some papers say 0% at presentation, others 40 to 80%.</p>
 <hr>
 <h2 id="other-images"><strong>Other Images</strong></h2>
 
-</body>
-</html>
+    </body>
+    </html>
